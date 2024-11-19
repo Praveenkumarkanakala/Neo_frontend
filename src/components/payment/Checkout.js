@@ -75,7 +75,7 @@ const CheckoutForm = ({ clientSecret }) => {
       setPaymentStatus('Payment failed: ' + error.message);
     } else if (paymentIntent.status === 'succeeded') {
       setPaymentStatus('Payment succeeded!');
-      await axios.post('http://localhost:5000/save-transaction', {
+      await axios.post('https://neoconferences.org/api/save-transaction', {
         amount: paymentIntent.amount / 100, // amount in dollars
         paymentStatus: 'succeeded',
         transactionId: paymentIntent.id,
