@@ -29,7 +29,7 @@ const CheckoutForm = ({ clientSecret }) => {
       setPaymentStatus('Payment failed: ' + error.message);
     } else if (paymentIntent.status === 'succeeded') {
       setPaymentStatus('Payment succeeded!');
-      await axios.post('http://localhost:8080/save-transaction', {
+      await axios.post('/save-transaction', {
         amount: paymentIntent.amount / 100, // amount in dollars
         paymentStatus: 'succeeded',
         transactionId: paymentIntent.id,
