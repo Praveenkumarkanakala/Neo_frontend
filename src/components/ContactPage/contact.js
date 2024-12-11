@@ -39,7 +39,7 @@ function ContactUs() {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/add-data', {
+      const response = await fetch('https://neoconferences.org/api/add-data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
