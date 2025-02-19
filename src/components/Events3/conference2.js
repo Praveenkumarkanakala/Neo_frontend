@@ -140,7 +140,7 @@ const OverlayPage = () => {
     // Create a temporary link element
     const link = document.createElement('a');
     link.href =newfile;
-    link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
+    link.download = '4th-International-Congress-Womens-Health-Brochure.pdf';
     
     document.body.appendChild(link);
     link.click();
@@ -151,7 +151,7 @@ const OverlayPage = () => {
     <div>
       <div className="spoverlay-cont">
         <div className="spoverlay-text">
-          <h1>3rd International conference on Mental Health, Well-Being, and Spiritual Healing</h1> 
+          <h1>4th International conference on Mental Health, Well-Being, and Spiritual Healing</h1> 
           <div className="spevent-details">
             <div className="spevent-date">
               <FaCalendarAlt className="spicon" />
@@ -207,12 +207,12 @@ const OverlayPage = () => {
         <div className="sptext-container">
           <h2>About the Conference</h2>
           <p>
-          The 3rd World Congress on Mindfulness, Psychology, and Spirituality, hosted by Neo Conferences, presents a unique opportunity for individuals from diverse backgrounds and disciplines to come together, share insights, and explore the interconnectedness of mind, body, and spirit. 
+          The 4th World Congress on Mindfulness, Psychology, and Spirituality, hosted by Neo Conferences, presents a unique opportunity for individuals from diverse backgrounds and disciplines to come together, share insights, and explore the interconnectedness of mind, body, and spirit. 
           </p>
           <p>The theme of this congress is  <strong>"Mindfulness in Action: Integrating Psychology and Spirituality for Holistic Well-Being."</strong>  This forum aims to serve as a catalyst for transformative change, promoting mental health, emotional resilience, and spiritual growth through mindfulness practices.
           </p>
           <p>
-          Join us in Paris, France, on March 05-06, 2025, to engage in meaningful discussions and connect with like-minded individuals who are dedicated to enhancing well-being through mindfulness, psychological understanding, and spiritual exploration. This is a chance to express your passion on an international platform and contribute to a collective vision of holistic health and personal development.
+          Join us in Toronto, Canada, on May 07-08, 2025, to engage in meaningful discussions and connect with like-minded individuals who are dedicated to enhancing well-being through mindfulness, psychological understanding, and spiritual exploration. This is a chance to express your passion on an international platform and contribute to a collective vision of holistic health and personal development.
           </p>
           <p>By convening in this inclusive environment, we can create a powerful movement for positive change and significantly impact the world. We invite you to share your experiences, insights, and innovative ideas for fostering a more mindful, psychologically informed, and spiritually enriched future for all.</p>
         </div>

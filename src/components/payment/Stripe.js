@@ -44,7 +44,7 @@ function StripePay() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const response = await fetch('https://neoconferences.org/api/create-payment-intent', {
+    const response = await fetch('http://localhost:8080/create-payment-intent', {
     // const response = await fetch('http://neoconferences.org/api/create-payment-intent', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

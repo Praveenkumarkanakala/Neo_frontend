@@ -140,7 +140,7 @@ const Events = () => {
     // Create a temporary link element
     const link = document.createElement('a');
     link.href =file;
-    link.download = '3rd-International-Congress-Womens-Leadership-Brochure.pdf';
+    link.download = '5th-International-Congress-Womens-Leadership-Brochure.pdf';
     
     document.body.appendChild(link);
     link.click();
@@ -152,7 +152,7 @@ const Events = () => {
     <div>
       <div className="eventOverview">
         <div className="eventOverlayText">
-            <h1>3rd Global Women Power Summit on the Dynamics of Leadership</h1>
+            <h1>5th Global Women Power Summit on the Dynamics of Leadership</h1>
             <div className="eventDetails">
             <div className="eventDate">
                 <FaCalendarAlt className="icon" />
@@ -210,7 +210,7 @@ const Events = () => {
         <div className="confnewtext-overview">
           <h2>About the Conference</h2>
           <p>
-          Join us for the 3rd Global Congress on Women’s Leadership, Empowerment, and Sustainable Development, hosted by Neo Conferences, on July 23-24, 2025, in London, UK. This dynamic event offers a transformative platform for women from all walks of life to engage, collaborate, and drive progress on issues impacting their personal and professional spheres.
+          Join us for the 5th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development, hosted by Neo Conferences, on July 23-24, 2025, in London, UK. This dynamic event offers a transformative platform for women from all walks of life to engage, collaborate, and drive progress on issues impacting their personal and professional spheres.
             <strong> "Women’s Voices, Women’s Power: Advancing Leadership and Sustainable Development," </strong>.
           </p>
           <p>

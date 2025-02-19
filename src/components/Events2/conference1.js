@@ -152,7 +152,7 @@ const OverlayPage = () => {
     <div>
       <div className="troverlay-container">
         <div className="troverlay-text">
-          <h1> 3rd International Conference on Gender Diversity and Transgender Health </h1> 
+          <h1> 5th International Conference on Gender Diversity and Transgender Health </h1> 
           <div className="trevent-details">
             <div className="trevent-date">
               <FaCalendarAlt className="icon" />
@@ -209,7 +209,7 @@ const OverlayPage = () => {
             <strong> Women’s Voices, Women’s Power: Toward a Vision of Women Leadership</strong>.
           </p>
           <p>
-            Join us for the Global Women’s Leadership Summit to be held on March 05-06, 2025, in Paris, France. This is an opportunity to show your passion on a global stage and connect with like-minded individuals who share your commitment to gender equality, economic empowerment, leadership, education, health, and political participation for women worldwide.
+            Join us for the Global Women’s Leadership Summit to be held on July 23-24, 2025, in London, UK. This is an opportunity to show your passion on a global stage and connect with like-minded individuals who share your commitment to gender equality, economic empowerment, leadership, education, health, and political participation for women worldwide.
           </p>
         </div>
       </div>
