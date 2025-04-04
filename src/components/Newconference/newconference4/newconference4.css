@@ -1,0 +1,751 @@
+body {
+    font-family: "Poppins", sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  .useventOverview {
+    position: relative;
+    width: 92%;
+    height: 600px;
+    background-color: #97234c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 0;
+    margin: 0;
+  }
+  
+  .useventOverlayText {
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .useventOverlayText h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .useventDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .useventDate,
+  .useventLocation {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .usicon {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .usbuttonGroup {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .useventButton {
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .useventButton:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+  }
+  
+  .useventButton:active {
+    transform: translateY(2px);
+  }
+  
+
+
+  .uscountdownContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    padding: 2 0px;
+    color: white;
+  }
+  
+  .uscountdownTimer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .ustimeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  .ustimeBox span:first-child {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeNumber 1s infinite alternate;
+  }
+  
+  .ustimeBox span:last-child {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes fadeNumber {
+    0% {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      color: #fff;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .useventOverview {
+      flex-direction: column;
+      padding: 0 50px;
+      height: auto;
+    }
+  
+    .useventOverlayText h1 {
+      font-size: 2.2rem;
+    }
+  
+    .useventOverlayText p {
+      font-size: 1.1rem;
+    }
+  
+    .useventDate,
+    .useventLocation {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .useventOverview {
+      padding: 0 30px;
+    }
+  
+    .useventOverlayText h1 {
+      font-size: 2rem;
+    }
+  
+    .useventOverlayText p {
+      font-size: 1rem;
+    }
+  
+    .useventDetails {
+      gap: 5px;
+    }
+  
+    .usbuttonGroup {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .useventButton {
+      padding: 10px 20px;
+    }
+  
+    .uscountdownTimer {
+      gap: 15px;
+    }
+  
+    .ustimeBox {
+      padding: 40px;
+    }
+  
+    .ustimeBox span:first-child {
+      font-size: 2.4rem;
+    }
+  
+    .ustimeBox span:last-child {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .useventOverview {
+      padding: 0 20px;
+    }
+  
+    .useventOverlayText h1 {
+      font-size: 1.8rem;
+    }
+  
+    .useventOverlayText p {
+      font-size: 0.9rem;
+    }
+  
+    .useventDetails {
+      gap: 5px;
+    }
+  
+    .uscountdownTimer {
+      gap: 10px;
+      margin-left: 70px;
+      flex-direction: row;
+    }
+  
+    .ustimeBox {
+      padding: 30px;
+    }
+  
+    .ustimeBox span:first-child {
+      font-size: 2rem;
+    }
+  
+    .ustimeBox span:last-child {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .useventOverview {
+      padding: 0 10px;
+    }
+  
+    .useventOverlayText h1 {
+      font-size: 1.5rem;
+    }
+  
+    .useventOverlayText p {
+      font-size: 0.8rem;
+    }
+  
+    .useventDetails {
+      gap: 5px;
+    }
+  
+    .useventButton {
+      padding: 8px 15px;
+      font-size: 1rem;
+    }
+  
+    .uscountdownContainer {
+      margin-right: 0;
+    }
+  
+    .ustimeBox {
+      padding: 10px;
+    }
+  
+    .ustimeBox span:first-child {
+      font-size: 1.8rem;
+    }
+  
+    .ustimeBox span:last-child {
+      font-size: 0.8rem;
+    }
+  }
+
+
+
+  
+    .usnewconference-overview {
+      background-color: none;
+      padding: 50px;
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+    }
+    
+    .usnewimage-overview {
+      margin-top: 10px;
+    }
+    
+    .usnewimage-overview img {
+      width: 100%;
+      max-width: 1038px;
+      height: 500px;
+      border-radius: 10px;
+    }
+  
+  .usconfnewtext-overview {
+    margin-top: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px; 
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    border-radius: 10px; 
+  }
+  
+  .usconfnewtext-overview h2 {
+    color: #003366;
+    font-size: 34px; 
+    font-weight: bold;
+    margin-bottom: 24px;
+    letter-spacing: 1px; 
+  }
+  
+  .usconfnewtext-overview p {
+    font-size: 20px; 
+    line-height: 1.8; 
+    color: #333; 
+    margin-bottom: 18px; 
+    text-align: justify; 
+  }
+  
+  .usconfnewtext-overview strong {
+    font-weight: 700; 
+    color: #222; 
+  }
+  
+  .usconfnewtext-overview br {
+    line-height: 1.8; 
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .usconfnewtext-overview {
+      padding: 25px; 
+    }
+    .usconfnewtext-overview h2 {
+      font-size: 30px; 
+    }
+    .usconfnewtext-overview p {
+      font-size: 18px; 
+    }
+  }
+  @media (max-width: 992px) {
+    .usconfnewtext-overview {
+      padding: 20px; 
+    }
+    .usconfnewtext-overview h2 {
+      font-size: 28px; 
+    }
+    .usconfnewtext-overview p {
+      font-size: 17px; 
+    }
+  }
+  @media (max-width: 768px) {
+    .usconfnewtext-overview {
+      padding: 15px; 
+    }
+    .usconfnewtext-overview h2 {
+      font-size: 26px; 
+    }
+    .usconfnewtext-overview p {
+      font-size: 16px; 
+      line-height: 1.6; 
+    }
+  }
+
+  
+  .usconference-Topics {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    .usconference-Topics h1 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    
+    .usnewTopics-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .usnewTopics-card {
+      background-color: #f9f9f9;
+      flex: 1 1 calc(30% - 80px); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .usnewTopics-card:hover {
+      transform: translateY(-10px); 
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .usnewTopics-card h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #333;
+      text-align: left;
+    }
+    
+    .usnewTopics-card ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .usnewTopics-card ul li {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 1024px) {
+      .usnewTopics-card {
+        flex: 1 1 calc(33.33% - 20px); 
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .usnewTopics-card {
+        flex: 1 1 calc(50% - 20px); 
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .usnewTopics-card {
+        flex: 1 1 100%; 
+      }
+    } 
+  
+    .usnew-venue {
+      padding: 40px;
+      text-align: center;
+      margin-top: 1px;
+    }
+    
+    .usnew-venue h2 {
+      font-size: 52px;
+      color: #2d5e7e;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      position: relative;
+    }
+    
+    .usnew-venue h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #f4f4f4;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .usnew-venue p {
+      font-size: 24px;
+      color: #333;
+    }
+
+
+    .usnew-agenda-section {
+      margin-top: 1px;
+      text-align: center;
+      padding: 40px;
+      background-color: #f4f4f4;
+      color: #f1f1f1;
+    }
+    
+    .usnew-agenda-section h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #61dafb;
+    }
+    
+    .usconferenceday-buttons {
+      margin-bottom: 30px;
+    }
+    
+    .usconferenceday-buttons button {
+      background-color: #61dafb;
+      border: none;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .usconferenceday-buttons button:hover {
+      background-color: #21a1f1;
+      transform: scale(1.05);
+    }
+    
+    .usconferenceday-buttons .active {
+      background-color: #333;
+      color: #61dafb;
+    }
+    
+    .usconference-section-table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .usconference-section-table th,
+    .usconference-section-table td {
+      padding: 15px;
+      text-align: left;
+      font-size: 18px;
+    }
+    
+    .usconference-section-table th {
+      background-color: #61dafb;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .usconference-section-table td {
+      color: #333;
+    }
+    
+    .usconference-section-table tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+    
+    .usconference-section-table tr:hover {
+      background-color: #e0e0e0;
+      cursor: pointer;
+    }
+    
+    .usconference-section-table tr:first-child {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .usnew-agenda-section {
+        padding: 20px;
+      }
+    
+      .usconference-section-table {
+        width: 100%;
+      }
+    
+      .usconferenceday-buttons button {
+        font-size: 14px;
+        padding: 10px 18px;
+      }
+    
+      .usconference-section-table th,
+      .usconference-section-table td {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+
+
+
+    .usregistration-carai {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 50px 20px;
+      background: linear-gradient(to bottom, #044a6b, #0a3c5d);
+  }
+  
+  .usintro-carai h1 {
+      font-size: 2.8em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #FFFFFF;
+      animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .usintro-carai p {
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: #E0E0E0;
+      animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .usregistration-card-carai {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 70px; 
+      max-width: 1200px; 
+      margin: 0 auto;
+      padding: 0 20px; 
+      justify-content: center; 
+      animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .usregistration-caraicard {
+      background-color: #F7F9FC;
+      color: #0D3B66;
+      border-radius: 10px;
+      padding: 25px;
+      width: 100%;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transform: scale(1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+  }
+  
+  .usregistration-caraicard:hover {
+      transform: scale(1.08);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .usregistration-caraicard h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #0056b3;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+  }
+  
+  .usregistration-caraicard ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+  }
+  
+  .usregistration-caraicard ul li {
+      font-size: 1em;
+      margin: 8px 0;
+      color: #3C4858;
+  }
+  
+  .usregistration-caraicard p {
+      font-size: 1.6em;
+      color: #FF5A5F;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .usregistration-caraicard button {
+      background-color: #007BFF;
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .usregistration-caraicard button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  @keyframes fadeInDown {
+      from {
+          opacity: 0;
+          transform: translateY(-30px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  @media (max-width: 1024px) {
+      .usregistration-card-carai {
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 60px; 
+          padding: 0 30px; 
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .usregistration-card-carai {
+          grid-template-columns: 1fr; 
+          gap: 40px; 
+          padding: 0 15px; 
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .usregistration-card-carai {
+          grid-template-columns: 1fr; 
+          gap: 30px; 
+          padding: 0 10px; 
+      }
+  }
+  

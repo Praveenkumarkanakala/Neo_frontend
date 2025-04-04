@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../../chatbot/chatbot";
 import Footer from "../../Footer/footer";
 // import StripePay from "../payment/Stripe";
-import file from "../../images/Neo Brochure.pdf"
+// import file from "../../images/Neo Brochure.pdf"
 
 const Events = () => {
   const navigate=useNavigate()
@@ -16,7 +16,7 @@ const Events = () => {
   };
 
   useEffect(() => {
-    const eventDate = new Date('2025-07-23T00:00:00');
+    const eventDate = new Date('2026-03-08T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -136,37 +136,37 @@ const Events = () => {
   ? day4Schedule 
   : null;
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =file;
-    link.download = '3rd-International-Congress-Womens-Leadership-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =file;
+  //   link.download = '5th-International-Congress-Womens-Leadership-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
 
   return (
     <div>
       <div className="eventOverview">
         <div className="eventOverlayText">
-            <h1>3rd Global Women Power Summit on the Dynamics of Leadership</h1>
+            <h1>4th Global Women Power Summit on the Dynamics of Leadership</h1>
             <div className="eventDetails">
             <div className="eventDate">
                 <FaCalendarAlt className="icon" />
-                <span>July 23-24, 2025</span>
+                <span>March 08-09, 2026</span>
             </div>
             <div className="eventLocation">
                 <FaMapMarkerAlt className="icon" />
-                <span>London, UK</span>
+                <span>Paris, France</span>
             </div>
             </div>
             <div className="buttonGroup">
             <button 
             className="event-button" 
-            onClick={handleBrochureDownload}
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
@@ -210,7 +210,7 @@ const Events = () => {
         <div className="confnewtext-overview">
           <h2>About the Conference</h2>
           <p>
-          Join us for the 3rd Global Congress on Women’s Leadership, Empowerment, and Sustainable Development, hosted by Neo Conferences, on July 23-24, 2025, in London, UK. This dynamic event offers a transformative platform for women from all walks of life to engage, collaborate, and drive progress on issues impacting their personal and professional spheres.
+          Join us for the 4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development, hosted by Neo Conferences, on March 08-09, 2026, in Paris, France. This dynamic event offers a transformative platform for women from all walks of life to engage, collaborate, and drive progress on issues impacting their personal and professional spheres.
             <strong> "Women’s Voices, Women’s Power: Advancing Leadership and Sustainable Development," </strong>.
           </p>
           <p>
@@ -340,7 +340,7 @@ const Events = () => {
         </div>
         <div className="new-venue">
           <h2>Venue</h2>
-          <p>London, UK</p>
+          <p>Paris, France</p>
         </div>
       </div>
       
@@ -399,8 +399,8 @@ const Events = () => {
               <li>CPD Credits</li>
               <li>Breakfast & Lunch</li>
             </ul>
-            <p>$599</p>
-            <button onClick={() => handleclick1(599, 'Speaker Registration & Certificate & CPD Credits & Breakfast & Lunch')}>
+            <p>$699</p>
+            <button onClick={() => handleclick1(699, 'Speaker Registration & Certificate & CPD Credits & Breakfast & Lunch')}>
               Register Now →
             </button>
           </div>
@@ -414,8 +414,8 @@ const Events = () => {
               <li>Speaker Slot + 2 Nights</li>
               <li>Accommodation</li>
             </ul>
-            <p>$899</p>
-            <button onClick={() => handleclick1(899, 'Package A: Certificate & CPD Credits & Breakfast & Lunch & Speaker Slot + 2 Nights & Accommodation')}>
+            <p>$999</p>
+            <button onClick={() => handleclick1(999, 'Package A: Certificate & CPD Credits & Breakfast & Lunch & Speaker Slot + 2 Nights & Accommodation')}>
               Register Now →
             </button>
           </div>
@@ -429,8 +429,8 @@ const Events = () => {
               <li>Speaker Slot + 3 Nights</li>
               <li>Accommodation</li>
             </ul>
-            <p>$1,099</p>
-            <button onClick={() => handleclick1(1099, 'Package B: Certificate & CPD Credits & Breakfast & Lunch & Speaker Slot + 3 Nights & Accommodation')}>
+            <p>$1,199</p>
+            <button onClick={() => handleclick1(1199, 'Package B: Certificate & CPD Credits & Breakfast & Lunch & Speaker Slot + 3 Nights & Accommodation')}>
               Register Now →
             </button>
           </div>
@@ -445,8 +445,8 @@ const Events = () => {
               <li>Exhibitor Booth</li>
               <li>Speaker Slot</li>
             </ul>
-            <p>$1,399</p>
-            <button onClick={() => handleclick1(1399, 'Exhibitor Pass: Certificate & CPD Credits & Breakfast & Lunch & Exhibitor Booth & Speaker Slot')}>
+            <p>$1,499</p>
+            <button onClick={() => handleclick1(1499, 'Exhibitor Pass: Certificate & CPD Credits & Breakfast & Lunch & Exhibitor Booth & Speaker Slot')}>
               Register Now →
             </button>
           </div>
@@ -458,8 +458,8 @@ const Events = () => {
               <li>CPD Credits</li>
               <li>Breakfast & Lunch</li>
             </ul>
-            <p>$299</p>
-            <button onClick={() => handleclick1(299, 'Delegate: Certificate & CPD Credits & Breakfast & Lunch')}>
+            <p>$399</p>
+            <button onClick={() => handleclick1(399, 'Delegate: Certificate & CPD Credits & Breakfast & Lunch')}>
               Register Now →
             </button>
           </div>
@@ -470,8 +470,8 @@ const Events = () => {
               <li>Certificate</li>
               <li>CPD Credits</li>
             </ul>
-            <p>$299</p>
-            <button onClick={() => handleclick1(299, 'Virtual Speaker: Certificate & CPD Credits')}>
+            <p>$399</p>
+            <button onClick={() => handleclick1(399, 'Virtual Speaker: Certificate & CPD Credits')}>
               Register Now →
             </button>
           </div>

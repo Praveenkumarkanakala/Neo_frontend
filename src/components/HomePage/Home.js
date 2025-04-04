@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './home.css';
-import neologo from './neologo.png'; 
+// import neologo from './neologo.png'; 
 import conferenceImage from './image.png';
 import newconferenceone from './newimageone.png';
 import conferenceImageone from './imageone.png';
@@ -137,13 +137,14 @@ const HomePage = () => {
         <div className="conference-container">
           <img src={conferenceImage} alt="Women Leaders Summit in Paris" className="conference-main-image" />
           <div className="conference-details">
-            <h3>3rd Global Women Power Summit on the Dynamics of Leadership</h3>
+            <h3>Global Women Power Summit on the Dynamics of Leadership</h3>
             <p>Women's Voices, Women's Power: Toward a Vision of Women Leadership</p>
             <div className="conference-dates">
               {[
-                { image: newconferenceImage, date: 'March 5-6, 2025 | Paris, France', link: '/newconference' },
                 { image: newconferenceImage, date: 'May 7-8, 2025 | Toronto, Canada', link: '/newconference1' },
-                { image: newconferenceImage, date: 'July 23-24, 2025 | London, UK', link: '/newconference2' }
+                { image: newconferenceImage, date: 'October 9-10, 2025 | Toronto, Canada', link: '/newconference' },
+                { image: newconferenceImage, date: 'March 08-09, 2026 | Paris, France', link: '/newconference2' },
+                { image: newconferenceImage, date: 'October 15-16, 2026 | NewYork, USA', link: '/newconference3' }
               ].map((item, index) => (
                 <div className="conference-date" key={index}>
                   <Link to={item.link}>
@@ -158,13 +159,14 @@ const HomePage = () => {
         <div className="conference-container">
           <img src={conferenceImageone} alt="Psychiatry Summit in Paris" className="conference-main-image" />
           <div className="conference-details">
-            <h3>3rd Global Summit on Psychiatry, Mental Health, and Neuroscience</h3>
+            <h3>Global Summit on Psychiatry, Mental Health, and Neuroscience</h3>
             <p>Unlocking the Power of Global Mental Health: From Awareness to Action</p>
             <div className="conference-dates">
               {[
-                { image: newconferenceone, date: 'March 05-06, 2025 | Paris, France', link: '/inside2' },
-                { image: newconferenceone, date: 'May 7-8, 2025 | Toronto, Canada ', link: '/inside1' },
-                { image: newconferenceone, date: 'July 23-24, 2025 | London, UK', link: '/inside' }
+                { image: newconferenceone, date:'May 7-8, 2025 | Toronto, Canada', link: '/inside2' },
+                { image: newconferenceone, date:'October 9-10, 2025 | Toronto, Canada', link: '/inside1' },
+                { image: newconferenceone, date:'March 08-09, 2026 | Paris, France', link: '/inside' },
+                { image: newconferenceone, date: 'October 15-16, 2026 | NewYork, USA', link: '/inside3' }
               ].map((item, index) => (
                 <div className="conference-date" key={index}>
                   <Link to={item.link}> 

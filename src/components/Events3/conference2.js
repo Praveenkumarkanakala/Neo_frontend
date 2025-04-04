@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../chatbot/chatbot";
 import Footer from "../Footer/footer";
 import Register from "../Register/register";
-import newfile from "../images/Neo Mental Health Brochure.pdf"
+// import newfile from "../images/Neo Mental Health Brochure.pdf"
 
 const OverlayPage = () => {
   const navigate=useNavigate()
@@ -15,7 +15,7 @@ const OverlayPage = () => {
     navigate(`/pay/${amount}/${encodeURIComponent(description)}`);
   };
   useEffect(() => {
-    const eventDate = new Date('2025-05-07T00:00:00');
+    const eventDate = new Date('2025-10-09T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -136,59 +136,58 @@ const OverlayPage = () => {
   ? day4Schedule 
   : null;
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =newfile;
-    link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =newfile;
+  //   link.download = '4th-International-Congress-Womens-Health-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div>
-      <div className="overlay-cont">
-        <div className="overlay-text">
-          <h1>3rd International conference on Mental Health, Well-Being, and Spiritual Healing</h1> 
-          {/* <p>Unlocking the Power of Global Mental Health: From Awareness to Action</p> */}
-          <div className="event-details">
-            <div className="event-date">
-              <FaCalendarAlt className="icon" />
-              <span>May 07-08, 2025</span>
+      <div className="spoverlay-cont">
+        <div className="spoverlay-text">
+          <h1>4th International conference on Mental Health, Well-Being, and Spiritual Healing</h1> 
+          <div className="spevent-details">
+            <div className="spevent-date">
+              <FaCalendarAlt className="spicon" />
+              <span>October 09-10, 2025</span>
             </div>
-            <div className="event-location">
-              <FaMapMarkerAlt className="icon" />
+            <div className="spevent-location">
+              <FaMapMarkerAlt className="spicon" />
               <span>Toronto, Canada </span>
             </div>
           </div>
-          <div className="button-group">
+          <div className="spbutton-group">
           <button 
-            className="event-button" 
-            onClick={handleBrochureDownload}
+            className="spevent-button" 
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
-            <button className="event-button">Abstract</button>
+            <button className="spevent-button">Abstract</button>
           </div>
         </div>
 
-        <div className="countdown-container">
-          <div className="countdown-timer">
-            <div className="time-box">
+        <div className="spcountdown-container">
+          <div className="spcountdown-timer">
+            <div className="sptime-box">
               <span>{timeLeft.days}</span>
               <span>Days</span>
             </div>
-            <div className="time-box">
+            <div className="sptime-box">
               <span>{timeLeft.hours}</span>
               <span>Hours</span>
             </div>
-            <div className="time-box">
+            <div className="sptime-box">
               <span>{timeLeft.minutes}</span>
               <span>Minutes</span>
             </div>
-            <div className="time-box">
+            <div className="sptime-box">
               <span>{timeLeft.seconds}</span>
               <span>Seconds</span>
             </div>
@@ -196,34 +195,31 @@ const OverlayPage = () => {
         </div>
       </div>
 
-      {/* Image and About Section outside the overlay background */}
-      <div className="conference-details">
-        <div className="image-container">
+      
+      <div className="spconference-details">
+        <div className="spimage-container">
           <img
             src={require('../images/conf.jpg')}
             alt="Conference"
           />
         </div>
 
-        <div className="text-container">
+        <div className="sptext-container">
           <h2>About the Conference</h2>
           <p>
-          The 3rd World Congress on Mindfulness, Psychology, and Spirituality, hosted by Neo Conferences, presents a unique opportunity for individuals from diverse backgrounds and disciplines to come together, share insights, and explore the interconnectedness of mind, body, and spirit. 
+          The 4th World Congress on Mindfulness, Psychology, and Spirituality, hosted by Neo Conferences, presents a unique opportunity for individuals from diverse backgrounds and disciplines to come together, share insights, and explore the interconnectedness of mind, body, and spirit. 
           </p>
           <p>The theme of this congress is  <strong>"Mindfulness in Action: Integrating Psychology and Spirituality for Holistic Well-Being."</strong>  This forum aims to serve as a catalyst for transformative change, promoting mental health, emotional resilience, and spiritual growth through mindfulness practices.
           </p>
           <p>
-          Join us in Paris, France, on March 05-06, 2025, to engage in meaningful discussions and connect with like-minded individuals who are dedicated to enhancing well-being through mindfulness, psychological understanding, and spiritual exploration. This is a chance to express your passion on an international platform and contribute to a collective vision of holistic health and personal development.
+          Join us in Toronto, Canada, on October 09-10, 2025, to engage in meaningful discussions and connect with like-minded individuals who are dedicated to enhancing well-being through mindfulness, psychological understanding, and spiritual exploration. This is a chance to express your passion on an international platform and contribute to a collective vision of holistic health and personal development.
           </p>
           <p>By convening in this inclusive environment, we can create a powerful movement for positive change and significantly impact the world. We invite you to share your experiences, insights, and innovative ideas for fostering a more mindful, psychologically informed, and spiritually enriched future for all.</p>
         </div>
       </div>
 
 
-
-
-      {/* Scientific Sessions Section */}
-      <div className="scientific-sessions">
+      <div className="spscientific-sessions">
         <h1>Sessions/Topics</h1>
         <ul>
           <li>Women's Representation in Leadership</li>
@@ -237,16 +233,16 @@ const OverlayPage = () => {
           <li>Women in Network and Sustainable Development</li>
           <li>Work and the Future of Feminism</li>
         </ul>
-        <div className="venue-section">
+        <div className="spvenue-section">
           <h2>Venue</h2>
-          <p>Paris, France</p>
+          <p>Toronto, Canada</p>
         </div>
       </div>
 
       {/* Scientific Agenda */}
-      <div className="scientific-agenda">
+      <div className="spscientific-agenda">
         <h2>Scientific Agenda</h2>
-        <div className="day-buttons">
+        <div className="spday-buttons">
           <button onClick={() => setSelectedDay('day1')} className={selectedDay === 'day1' ? 'active' : ''}>
             Day 1 (Physical)
           </button>
@@ -261,7 +257,7 @@ const OverlayPage = () => {
           </button>
         </div>
 
-        <table className="schedule-table">
+        <table className="spschedule-table">
           <thead>
             <tr>
               <th>Time</th>

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../chatbot/chatbot";
 import Footer from "../Footer/footer";
 import Register from "../Register/register";
-import file from "../images/Neo Brochure.pdf"
+// import file from "../images/Neo Brochure.pdf"
 
 const Events = () => {
   const navigate=useNavigate()
@@ -17,7 +17,7 @@ const Events = () => {
   };
 
   useEffect(() => {
-    const eventDate = new Date('2025-07-23T00:00:00');
+    const eventDate = new Date('2026-03-08T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -138,37 +138,37 @@ const Events = () => {
   : null;
 
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =file;
-    link.download = '3rd-International-Congress-Womens-Leadership-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =file;
+  //   link.download = '4th-Global-Congress-on-Womens-Leadership-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div>
       <div className="eventsover">
         <div className="eventsoverlay-text">
-          <h1>3rd Global Congress on Women’s Leadership, Empowerment, and Sustainable Development </h1> 
+          <h1>4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development </h1> 
           {/* <p>Women’s Voices, Women’s Power: Toward a Vision of Women Leadership</p> */}
           <div className="event-details">
             <div className="event-date">
               <FaCalendarAlt className="icon" />
-              <span>July 23-24, 2025</span>
+              <span>March 08-09, 2026</span>
             </div>
             <div className="event-location">
               <FaMapMarkerAlt className="icon" />
-              <span>London, UK</span>
+              <span>Paris, France</span>
             </div>
           </div>
           <div className="button-group">
           <button 
             className="event-button" 
-            onClick={handleBrochureDownload}
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
@@ -198,8 +198,8 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="conference-details">
-        <div className="image-container">
+      <div className="thconference-details">
+        <div className="imageth-container">
           <img
             src={require('../images/conf.jpg')}
             alt="Conference"
@@ -209,7 +209,7 @@ const Events = () => {
         <div className="newtext-container">
           <h2>About the Conference</h2>
           <p>
-          Join us for the 3rd Global Congress on Women’s Leadership, Empowerment, and Sustainable Development, hosted by Neo Conferences, on July 23-24, 2025, in London, UK. This dynamic event offers a transformative platform for women from all walks of life to engage, collaborate, and drive progress on issues impacting their personal and professional spheres.
+          Join us for the 4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development, hosted by Neo Conferences, on March 08-09, 2026, in Paris, France. This dynamic event offers a transformative platform for women from all walks of life to engage, collaborate, and drive progress on issues impacting their personal and professional spheres.
             <strong> "Women’s Voices, Women’s Power: Advancing Leadership and Sustainable Development," </strong>.
           </p>
           <p>
@@ -337,15 +337,15 @@ const Events = () => {
           </div>
           
         </div>
-        <div className="venue-section">
+        <div className="thvenue-section">
           <h2>Venue</h2>
-          <p>London, UK</p>
+          <p>Paris, France</p>
         </div>
       </div>
       
-      <div className="scientific-agenda">
+      <div className="thscientific-agenda">
         <h2>Scientific Agenda</h2>
-        <div className="day-buttons">
+        <div className="thday-buttons">
           <button onClick={() => setSelectedDay('day1')} className={selectedDay === 'day1' ? 'active' : ''}>
             Day 1 (Physical)
           </button>
@@ -360,7 +360,7 @@ const Events = () => {
           </button>
         </div>
 
-        <table className="schedule-table">
+        <table className="thschedule-table">
           <thead>
             <tr>
               <th>Time</th>

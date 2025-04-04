@@ -6,7 +6,7 @@ import StripePay from "../payment/Stripe";
 import ChatbotIcon from "../chatbot/chatbot";
 import Footer from '../Footer/footer';
 import Register from "../Register/register";
-import newfile from "../images/Neo Mental Health Brochure.pdf"
+// import newfile from "../images/Neo Mental Health Brochure.pdf"
 const Events = () => {
   const navigate=useNavigate()
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -16,7 +16,7 @@ const Events = () => {
   };
 
   useEffect(() => {
-    const eventDate = new Date('2025-05-07T00:00:00');
+    const eventDate = new Date('2025-10-09T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -138,59 +138,59 @@ const Events = () => {
 
 
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =newfile;
-    link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =newfile;
+  //   link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
 
   return (
     <div>
-      <div className="eventsoverlay">
-        <div className="eventsoverlay-text">
-          <h1>3rd International congress on Women's Health and Midwifery Excellence </h1> 
-          <div className="event-details">
-            <div className="event-date">
-              <FaCalendarAlt className="icon" />
-              <span>May 07-08, 2025</span>
+      <div className="exeventsoverlay">
+        <div className="exeventsoverlay-text">
+          <h1>4th International congress on Women's Health and Midwifery Excellence </h1> 
+          <div className="exevent-details">
+            <div className="exevent-date">
+              <FaCalendarAlt className="exicon" />
+              <span>October 09-10, 2025</span>
             </div>
-            <div className="event-location">
-              <FaMapMarkerAlt className="icon" />
+            <div className="exevent-location">
+              <FaMapMarkerAlt className="exicon" />
               <span>Toronto, Canada</span>
             </div>
           </div>
-          <div className="button-group">
+          <div className="exbutton-group">
           <button 
-            className="event-button" 
-            onClick={handleBrochureDownload}
+            className="exevent-button" 
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
-            <button className="event-button">Abstract</button>
+            <button className="exevent-button">Abstract</button>
           </div>
         </div>
 
-        <div className="countdown-container">
-          <div className="countdown-timer">
-            <div className="time-box">
+        <div className="excountdown-container">
+          <div className="excountdown-timer">
+            <div className="extime-box">
               <span>{timeLeft.days}</span>
               <span>Days</span>
             </div>
-            <div className="time-box">
+            <div className="extime-box">
               <span>{timeLeft.hours}</span>
               <span>Hours</span>
             </div>
-            <div className="time-box">
+            <div className="extime-box">
               <span>{timeLeft.minutes}</span>
               <span>Minutes</span>
             </div>
-            <div className="time-box">
+            <div className="extime-box">
               <span>{timeLeft.seconds}</span>
               <span>Seconds</span>
             </div>
@@ -199,17 +199,17 @@ const Events = () => {
       </div>
 
 
-      <div className="conference-details">
-        <div className="image-container">
+      <div className="exconference-details">
+        <div className="eximage-container">
           <img
             src={require('../images/conf.jpg')}
             alt="Conference"
           />
         </div>
-        <div className="text-container">
+        <div className="extext-container">
           <h2>About the Conference</h2>
           <p>
-            Join us for the 3rd International Conference on Women's Health and Midwifery, to be held on May 07-08, 2025, in Toronto, Canada. This conference offers an exceptional opportunity for healthcare professionals, researchers, midwives, and advocates from diverse backgrounds and cultures to engage, collaborate, and explore crucial topics in women’s health and midwifery.
+            Join us for the 4th International Conference on Women's Health and Midwifery, to be held on October 09-10, 2025, in Toronto, Canada. This conference offers an exceptional opportunity for healthcare professionals, researchers, midwives, and advocates from diverse backgrounds and cultures to engage, collaborate, and explore crucial topics in women’s health and midwifery.
             <strong> "Empowering Women's Health: Bridging Gaps in Midwifery and Holistic Care" </strong>.
           </p>
           <p>
@@ -225,10 +225,10 @@ const Events = () => {
       </div>
 
 
-      <div className="scientific-sessions">
+      <div className="exscientific-sessions">
         <h1>Sessions/Topics</h1>
-        <div className="scientific-card-container">
-          <div className="scientific-card">
+        <div className="exscientific-card-container">
+          <div className="exscientific-card">
             <h2>Maternal and Child Health: Global Perspectives and Emerging Trends</h2>
             <ul>
               <li>Addressing disparities in maternal and infant mortality</li>
@@ -237,7 +237,7 @@ const Events = () => {
               <li>Midwifery: Advancing Practice and Education</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>The evolving role of midwives in modern healthcare</h2>
             <ul>
               <li>Midwifery-led care models and their impact on women’s health</li>
@@ -245,7 +245,7 @@ const Events = () => {
               <li>Reproductive Health and Rights </li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Access to reproductive healthcare: Challenges and solutions</h2>
             <ul>
               <li>Promoting sexual health education and family planning services</li>
@@ -253,7 +253,7 @@ const Events = () => {
               <li>Women’s Mental Health and Emotional Well-being</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Addressing mental health challenges in pregnancy and postpartum periods</h2>
             <ul>
               <li>The importance of mental health screening in women’s healthcare</li>
@@ -261,7 +261,7 @@ const Events = () => {
               <li>Healthcare Technologies in Women’s Health </li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Innovations in telemedicine and digital health tools for women</h2>
             <ul>
               <li>Wearable technology for monitoring maternal and reproductive health</li>
@@ -269,7 +269,7 @@ const Events = () => {
               <li>Obstetric Care: Enhancing Safety and Outcomes</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Reducing cesarean sections and promoting safe vaginal deliveries</h2>
             <ul>
               <li> Advances in labor and delivery techniques</li>
@@ -277,7 +277,7 @@ const Events = () => {
               <li>Nutrition and Women’s Health: From Pregnancy to Postpartum </li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>The role of nutrition in prenatal and postnatal care</h2>
             <ul>
               <li>Addressing nutritional deficiencies in women of childbearing age</li>
@@ -285,7 +285,7 @@ const Events = () => {
               <li>Perinatal and Neonatal Care: Innovations and Challenges</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Best practices in perinatal care to reduce complications</h2>
             <ul>
               <li>Neonatal intensive care advancements</li>
@@ -293,7 +293,7 @@ const Events = () => {
               <li>Midwifery in Global Contexts: Cultural and Regional Approaches </li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Traditional midwifery practices across different cultures</h2>
             <ul>
               <li>Integrating modern and traditional practices in midwifery</li>
@@ -301,7 +301,7 @@ const Events = () => {
               <li>Women’s Health Policy and Advocacy</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Shaping policies that promote women’s access to healthcare</h2>
             <ul>
               <li>Advocacy for midwifery and women’s health rights</li>
@@ -309,7 +309,7 @@ const Events = () => {
               <li>Chronic Diseases and Women’s Health </li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Managing chronic diseases (diabetes, cardiovascular disease) during pregnancy</h2>
             <ul>
               <li>The impact of chronic illnesses on reproductive health</li>
@@ -317,7 +317,7 @@ const Events = () => {
               <li>Holistic Approaches to Women’s Health and Well-being</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>Integrating alternative therapies (acupuncture, herbal medicine) with traditional healthcare</h2>
             <ul>
               <li>The role of mindfulness, yoga, and meditation in maternal health</li>
@@ -325,7 +325,7 @@ const Events = () => {
               <li> Addressing Gender-Based Violence in Women’s Health</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>The impact of violence and trauma on women’s reproductive health</h2>
             <ul>
               <li>Healthcare professionals’ role in identifying and supporting survivors</li>
@@ -333,7 +333,7 @@ const Events = () => {
               <li>Sustainable Development Goals and Women’s Health</li>
             </ul>
           </div>
-          <div className="scientific-card">
+          <div className="exscientific-card">
             <h2>The role of midwifery in achieving SDG 3: Good Health and Well-being</h2>
             <ul>
               <li>Women’s health and its contribution to the broader sustainability agenda</li>
@@ -342,16 +342,16 @@ const Events = () => {
             </ul>
           </div>
         </div>
-        <div className="venue-section">
+        <div className="exvenue-section">
           <h2>Venue</h2>
           <p>Toronto, Canada</p>
         </div>
       </div>
 
       
-      <div className="scientific-agenda">
+      <div className="exscientific-agenda">
         <h2>Scientific Agenda</h2>
-        <div className="day-buttons">
+        <div className="exday-buttons">
           <button onClick={() => setSelectedDay('day1')} className={selectedDay === 'day1' ? 'active' : ''}>
             Day 1 (Physical )
           </button>
@@ -366,7 +366,7 @@ const Events = () => {
           </button>
         </div>
 
-        <table className="schedule-table">
+        <table className="exschedule-table">
           <thead>
             <tr>
               <th>Time</th>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../chatbot/chatbot";
 import Footer from '../Footer/footer';
 import Register from "../Register/register";
-import newfile from "../images/Neo Mental Health Brochure.pdf"
+// import newfile from "../images/Neo Mental Health Brochure.pdf"
 
 
 const OverlayPage = () => {
@@ -16,7 +16,7 @@ const OverlayPage = () => {
     navigate(`/pay/${amount}/${encodeURIComponent(description)}`);
   };
   useEffect(() => {
-    const eventDate = new Date('2025-03-05T00:00:00');
+    const eventDate = new Date('2025-05-07T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -137,60 +137,60 @@ const OverlayPage = () => {
   ? day4Schedule 
   : null;
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =newfile;
-    link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =newfile;
+  //   link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
 
   return (
     <div>
-      <div className="overlay-side">
-        <div className="overlay-text">
-          <h1>3rd World Congress on Mindfulness, Psychology, and Spirituality</h1> 
+      <div className="mioverlay-side">
+        <div className="mioverlay-text">
+          <h1>4th World Congress on Mindfulness, Psychology, and Spirituality</h1> 
           {/* <p>Unlocking the Power of Global Mental Health: From Awareness to Action</p> */}
-          <div className="event-details">
-            <div className="event-date">
+          <div className="mievent-details">
+            <div className="mievent-date">
               <FaCalendarAlt className="icon" />
-              <span>March 05-06, 2025</span>
+              <span>May 07-08, 2025</span>
             </div>
-            <div className="event-location">
+            <div className="mievent-location">
               <FaMapMarkerAlt className="icon" />
-              <span>Paris, France</span>
+              <span>Toronto, Canada</span>
             </div>
           </div>
-          <div className="button-group">
+          <div className="mibutton-group">
           <button 
-            className="event-button" 
-            onClick={handleBrochureDownload}
+            className="mievent-button" 
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
-            <button className="event-button">Abstract</button>
+            <button className="mievent-button">Abstract</button>
           </div>
         </div>
 
-        <div className="countdown-container">
-          <div className="countdown-timer">
-            <div className="time-box">
+        <div className="micountdown-container">
+          <div className="micountdown-timer">
+            <div className="mitime-box">
               <span>{timeLeft.days}</span>
               <span>Days</span>
             </div>
-            <div className="time-box">
+            <div className="mitime-box">
               <span>{timeLeft.hours}</span>
               <span>Hours</span>
             </div>
-            <div className="time-box">
+            <div className="mitime-box">
               <span>{timeLeft.minutes}</span>
               <span>Minutes</span>
             </div>
-            <div className="time-box">
+            <div className="mitime-box">
               <span>{timeLeft.seconds}</span>
               <span>Seconds</span>
             </div>
@@ -198,31 +198,31 @@ const OverlayPage = () => {
         </div>
       </div>
 
-      <div className="conference-details">
-        <div className="image-container">
+      <div className="miconference-details">
+        <div className="miimage-container">
           <img
             src={require('../images/conf.jpg')}
             alt="Conference"
           />
         </div>
 
-        <div className="text-container">
+        <div className="mitext-container">
           <h2>About the Conference</h2>
           <p>
-          The 3rd World Congress on Mindfulness, Psychology, and Spirituality, hosted by Neo Conferences, presents a unique opportunity for individuals from diverse backgrounds and disciplines to come together, share insights, and explore the interconnectedness of mind, body, and spirit. 
+          The 4th World Congress on Mindfulness, Psychology, and Spirituality, hosted by Neo Conferences, presents a unique opportunity for individuals from diverse backgrounds and disciplines to come together, share insights, and explore the interconnectedness of mind, body, and spirit. 
           </p>
           <p>The theme of this congress is <strong> "Mindfulness in Action: Integrating Psychology and Spirituality for Holistic Well-Being."  </strong>  This forum aims to serve as a catalyst for transformative change, promoting mental health, emotional resilience, and spiritual growth through mindfulness practices.</p>
           <p>
-          Join us in Paris, France, on March 05-06, 2025, to engage in meaningful discussions and connect with like-minded individuals who are dedicated to enhancing well-being through mindfulness, psychological understanding, and spiritual exploration. This is a chance to express your passion on an international platform and contribute to a collective vision of holistic health and personal development.
+          Join us in Toronto, Canada, on May 07-08, 2025, to engage in meaningful discussions and connect with like-minded individuals who are dedicated to enhancing well-being through mindfulness, psychological understanding, and spiritual exploration. This is a chance to express your passion on an international platform and contribute to a collective vision of holistic health and personal development.
           </p>
           <p>By convening in this inclusive environment, we can create a powerful movement for positive change and significantly impact the world. We invite you to share your experiences, insights, and innovative ideas for fostering a more mindful, psychologically informed, and spiritually enriched future for all.</p>
         </div>
       </div>
 
-      <div className="topics-sessions">
+      <div className="mitopics-sessions">
         <h1>Sessions/Topics</h1>
-        <div className="topics-card-container">
-          <div className="topics-card">
+        <div className="mitopics-card-container">
+          <div className="mitopics-card">
             <h2> Mindfulness and Women’s Leadership</h2>
             <ul>
               <li>Exploring the role of mindfulness in cultivating authentic and empathetic leadership styles.</li>
@@ -231,7 +231,7 @@ const OverlayPage = () => {
               <li>The role of male allies and mindfulness in fostering a culture of inclusion and support for women in leadership.</li>
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>Psychology of Leadership</h2>
             <ul>
               <li>Women’s leadership styles and their psychological impact on organizational culture and performance.</li>
@@ -239,7 +239,7 @@ const OverlayPage = () => {
               <li>Women’s leadership in politics and public service: psychological resilience in high-pressure environments. </li>
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>Mental Health in Leadership and Society</h2>
             <ul>
               <li>The role of mental health in leadership and its impact on organizational culture</li>
@@ -249,7 +249,7 @@ const OverlayPage = () => {
               <li>Leadership styles and their influence on team well-being and mental health</li>
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>Spirituality and Well-Being in Personal Growth</h2>
             <ul>
               <li>The intersection of mindfulness, psychology, and spirituality in promoting well-being</li>
@@ -258,7 +258,7 @@ const OverlayPage = () => {
               <li>The role of spiritual mentors and guides in fostering mental and emotional growth</li>
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>Mindfulness and Mental Health in the Workplace</h2>
             <ul>
               <li>Mindfulness practices for promoting mental health in the workplace</li>
@@ -267,7 +267,7 @@ const OverlayPage = () => {
               <li>How organizations can support mental health initiatives and foster a culture of wellness</li>
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>Spirituality and Mental Health in Healing Practices</h2>
             <ul>
               <li> The role of spiritual healing in trauma recovery and mental health treatment</li>
@@ -276,7 +276,7 @@ const OverlayPage = () => {
               <li>Case studies on the impact of spiritual healing in therapeutic settings</li>
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>Well-Being and Mental Health Advocacy</h2>
             <ul>
               <li>Mental health advocacy in underserved communities and strategies for equitable access</li>
@@ -286,7 +286,7 @@ const OverlayPage = () => {
               
             </ul>
           </div>
-          <div className="topics-card">
+          <div className="mitopics-card">
             <h2>The Future of Mental Health and Spiritual Well-Being</h2>
             <ul>
               <li>The impact of emerging technologies on mental health and spiritual practices</li>
@@ -296,15 +296,15 @@ const OverlayPage = () => {
             </ul>
           </div>    
         </div>
-        <div className="venue-section">
+        <div className="mivenue-section">
           <h2>Venue</h2>
-          <p>Paris, France</p>
+          <p>Toronto, Canada</p>
         </div>
       </div>
 
-      <div className="scientific-agenda">
+      <div className="miscientific-agenda">
         <h2>Scientific Agenda</h2>
-        <div className="day-buttons">
+        <div className="miday-buttons">
           <button onClick={() => setSelectedDay('day1')} className={selectedDay === 'day1' ? 'active' : ''}>
             Day 1 (Physical)
           </button>
@@ -319,7 +319,7 @@ const OverlayPage = () => {
           </button>
         </div>
 
-        <table className="schedule-table">
+        <table className="mischedule-table">
           <thead>
             <tr>
               <th>Time</th>

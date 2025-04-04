@@ -14,11 +14,14 @@ import Newevents from './components/Events5/newevent';
 import Homeconference from './components/Newconference/newconference1/newconference1';
 import Homeconference1 from './components/Newconference/newconference2/newconference2';
 import Homeconference2 from './components/Newconference/newconference3/newconference3';
+import Homeconference3 from './components/Newconference/newconference4/newconference4';
 import StripePay from './components/payment/Stripe';
 import Theosym from './components/NewEvents/theosym';
 import ChatbotIcon from './components/chatbot/chatbot';
 import Footer from './components/Footer/footer';
 import Register from './components/Register/register';
+import Events6 from './components/Events6/event6';
+import Newconference7 from './components/Events7/conference7';
 
 
 function App() {
@@ -33,17 +36,20 @@ function App() {
           <Route path="/inside" element={< Newconference />} />
           <Route path="/inside1" element={< Newconference1 />} />
           <Route path="/inside2" element={< Newconference2 />} />
+          <Route path="/inside3" element={<Newconference7 />} />
           <Route path="/events" element={<Events />} />
           <Route path="/events1" element={<Eventsa/>} />
           <Route path="/newevents" element={<Newevents />} />
           <Route path="/newconference" element={<Homeconference />} />
           <Route path="/newconference1" element={<Homeconference1 />} />
           <Route path="/newconference2" element={<Homeconference2 />} />
+          <Route path="/newconference3" element={<Homeconference3 />} />
           <Route path="/pay/:amount/:description" element={<StripePay />} />
           <Route path="/theosym" element={<Theosym />} />
           <Route path="/chatbot" element={<ChatbotIcon />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/3rd-event" element={<Events6 />} /> 
         </Routes>
     </Router>
   );

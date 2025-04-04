@@ -1,4 +1,3 @@
-
 .eventsover {
   position: relative;
   width: 92%;
@@ -285,45 +284,7 @@
 
   
   
-
-
-
-
-
-  .image-container img {
-    width: 100%;
-    max-width: 938px;
-    height: 450px;
-    padding: 40px;
-    margin-right: 300px;
-    border-radius: 10px;
-  }
-  
-  .text-container {
-    margin-top: 20px;
-    max-width: 938px;
-    margin-right: 100px;
-    text-align: center;
-  }
-  
-  .text-container h2 {
-    color: #0066cc;
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  .text-container p {
-    font-size: 25px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .text-container strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .conference-details {
+  .thconference-details {
     background-color: none;
     padding: 50px;
     margin-top: -20px;
@@ -333,11 +294,11 @@
     color: #333;
   }
   
-  .image-container {
+  .imageth-container {
     margin-top: 10px;
   }
   
-  .image-container img {
+  .imageth-container img {
     width: 100%;
     max-width: 1038px;
     height: 500px;
@@ -348,46 +309,46 @@
 .newtext-container {
   margin-top: 30px;
   max-width: 900px;
-  margin: 0 auto; /* Center container */
-  padding: 30px; /* Padding for breathing space */
+  margin: 0 auto; 
+  padding: 30px; 
   text-align: center;
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean modern font */
-  border-radius: 10px; /* Rounded corners */
+  font-family: 'Helvetica Neue', Arial, sans-serif; 
+  border-radius: 10px; 
 }
 
 .newtext-container h2 {
-  color: #003366; /* Darker blue for better contrast */
-  font-size: 34px; /* Large, attention-grabbing heading */
+  color: #003366; 
+  font-size: 34px;
   font-weight: bold;
-  margin-bottom: 24px; /* Space between heading and text */
-  letter-spacing: 1px; /* Slightly spaced letters for clarity */
+  margin-bottom: 24px; 
+  letter-spacing: 1px; 
 }
 
 .newtext-container p {
-  font-size: 20px; /* Readable paragraph font size */
-  line-height: 1.8; /* Comfortable line spacing */
-  color: #333; /* Dark gray for easy reading */
-  margin-bottom: 18px; /* Space between paragraphs */
-  text-align: justify; /* Justify text for clean alignment */
+  font-size: 20px; 
+  line-height: 1.8; 
+  color: #333;
+  margin-bottom: 18px; 
+  text-align: justify; 
 }
 
 .newtext-container strong {
-  font-weight: 700; /* Strong emphasis for bold text */
-  color: #222; /* Darker color for emphasis */
+  font-weight: 700; 
+  color: #222; 
 }
 
 .newtext-container br {
-  line-height: 1.8; /* Consistent line spacing */
+  line-height: 1.8;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .newtext-container {
-    padding: 25px; /* Reduce padding for medium screens */
+    padding: 25px; 
   }
 
   .newtext-container h2 {
-    font-size: 30px; /* Smaller heading */
+    font-size: 30px; 
   }
 
   .newtext-container p {
@@ -502,13 +463,13 @@
 
 
   /* Venue Section */
-  .venue-section {
+  .thvenue-section {
     padding: 40px;
     text-align: center;
     margin-top: 1px;
   }
   
-  .venue-section h2 {
+  .thvenue-section h2 {
     font-size: 52px;
     color: #2d5e7e;
     margin-bottom: 10px;
@@ -516,7 +477,7 @@
     position: relative;
   }
   
-  .venue-section h2::after {
+  .thvenue-section h2::after {
     content: "";
     width: 60px;
     height: 3px;
@@ -527,69 +488,13 @@
     transform: translateX(-50%);
   }
   
-  .venue-section p {
+  .thvenue-section p {
     font-size: 24px;
     color: #333;
   }
   
-  /* Scientific Agenda Section */
-  .agenda-section {
-    padding: 60px 100px;
-    text-align: center;
-    background-color: #f0f5fa;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .agenda-section h2 {
-    font-size: 3rem;
-    color: #2d5e7e;
-    margin-bottom: 10px;
-    font-weight: 700;
-    position: relative;
-  }
-  
-  .agenda-section h2::after {
-    content: "";
-    width: 80px;
-    height: 4px;
-    background: #2d5e7e;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-  }
-  
-  /* Day Selection Buttons */
-  .day-buttons {
-    margin-bottom: 40px;
-  }
-  
-  .day-buttons button {
-    margin: 0 15px;
-    padding: 15px 30px;
-    font-size: 1.3rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .day-buttons button:hover {
-    background-color: #45a049;
-    transform: translateY(-3px);
-  }
-  
-  .day-buttons .active {
-    background-color: #2d5e7e;
-    color: #fff;
-  }
-  
-  /* Scientific Agenda */
-  .scientific-agenda {
+
+  .thscientific-agenda {
     margin-top: 1px;
     text-align: center;
     padding: 40px;
@@ -597,18 +502,18 @@
     color: #f1f1f1;
   }
   
-  .scientific-agenda h2 {
+  .thscientific-agenda h2 {
     font-size: 36px;
     margin-bottom: 30px;
     text-transform: uppercase;
     color: #61dafb;
   }
   
-  .day-buttons {
+  .thday-buttons {
     margin-bottom: 30px;
   }
   
-  .day-buttons button {
+  .thday-buttons button {
     background-color: #61dafb;
     border: none;
     color: #fff;
@@ -620,17 +525,17 @@
     transition: background-color 0.3s, transform 0.3s;
   }
   
-  .day-buttons button:hover {
+  .thday-buttons button:hover {
     background-color: #21a1f1;
     transform: scale(1.05);
   }
   
-  .day-buttons .active {
+  .thday-buttons .active {
     background-color: #333;
     color: #61dafb;
   }
   
-  .schedule-table {
+  .thschedule-table {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
@@ -639,56 +544,55 @@
     overflow: hidden;
   }
   
-  .schedule-table th,
-  .schedule-table td {
+  .thschedule-table th,
+  .thschedule-table td {
     padding: 15px;
     text-align: left;
     font-size: 18px;
   }
   
-  .schedule-table th {
+  .thschedule-table th {
     background-color: #61dafb;
     color: white;
     font-size: 20px;
   }
   
-  .schedule-table td {
+  .thschedule-table td {
     color: #333;
   }
   
-  .schedule-table tr:nth-child(even) {
+  .thschedule-table tr:nth-child(even) {
     background-color: #f7f7f7;
   }
   
-  .schedule-table tr:hover {
+  .thschedule-table tr:hover {
     background-color: #e0e0e0;
     cursor: pointer;
   }
   
-  .schedule-table tr:first-child {
+  .thschedule-table tr:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .scientific-agenda {
+    .thscientific-agenda {
       padding: 20px;
     }
   
-    .schedule-table {
+    .thschedule-table {
       width: 100%;
     }
   
-    .day-buttons button {
+    .thday-buttons button {
       font-size: 14px;
       padding: 10px 18px;
     }
   
-    .schedule-table th,
-    .schedule-table td {
+    .thschedule-table th,
+    .thschedule-table td {
       font-size: 16px;
       padding: 10px;
     }
   }
-  

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../chatbot/chatbot";
 import Footer from "../Footer/footer";
 import Register from "../Register/register";
-import file from "../images/Neo Brochure.pdf"
+// import file from "../images/Neo Brochure.pdf"
 
 
 const Events = () => {
@@ -16,7 +16,7 @@ const Events = () => {
     navigate(`/pay/${amount}/${encodeURIComponent(description)}`);
   };
   useEffect(() => {
-    const eventDate = new Date('2025-03-05T00:00:00');
+    const eventDate = new Date('2025-05-07T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -136,77 +136,78 @@ const Events = () => {
   ? day4Schedule 
   : null;
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =file;
-    link.download = '3rd-International-Congress-Womens-Leaders-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =file;
+  //   link.download = '3rd-International-Congress-Womens-Leaders-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div>
-      <div className="newevents">
-        <div className="eventsoverlay-text">
-          <h1>3rd International Congress of Women Changemakers and Visionary Leaders  </h1> 
-          {/* <p>Women’s Voices, Women’s Power: Toward a Vision of Women Leadership</p> */}
-          <div className="event-details">
-            <div className="event-date">
+      <div className="chnewevents">
+        <div className="cheventsoverlay-text">
+          <h1>4th International Congress of Women Changemakers and Visionary Leaders  </h1> 
+          <div className="chevent-details">
+            <div className="chevent-date">
               <FaCalendarAlt className="icon" />
-              <span>March 05-06, 2025</span>
+              <span>May 07-08, 2025</span>
             </div>
-            <div className="event-location">
+            <div className="chevent-location">
               <FaMapMarkerAlt className="icon" />
-              <span>Prais,  France</span>
+              <span>Toronto, Canada.</span>
             </div>
           </div>
-          <div className="button-group">
+          <div className="chbutton-group">
           <button 
-            className="event-button" 
-            onClick={handleBrochureDownload}
+            className="chevent-button" 
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
-            <button className="event-button">Abstract</button>
+            <button className="chevent-button">Abstract</button>
           </div>
         </div>
 
-        <div className="countdown-container">
-          <div className="countdown-timer">
-            <div className="time-box">
+        <div className="chcountdown-container">
+          <div className="chcountdown-timer">
+            <div className="chtime-box">
               <span>{timeLeft.days}</span>
               <span>Days</span>
             </div>
-            <div className="time-box">
+            <div className="chtime-box">
               <span>{timeLeft.hours}</span>
               <span>Hours</span>
             </div>
-            <div className="time-box">
+            <div className="chtime-box">
               <span>{timeLeft.minutes}</span>
               <span>Minutes</span>
             </div>
-            <div className="time-box">
+            <div className="chtime-box">
               <span>{timeLeft.seconds}</span>
               <span>Seconds</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="conference-details">
-        <div className="image-container">
+
+
+      <div className="chconference-details">
+        <div className="chimage-container">
           <img
             src={require('../images/conf.jpg')}
             alt="Conference"
           />
         </div>
 
-        <div className="text-container">
+        <div className="chtext-container">
           <h2>About the Conference</h2>
           <p>
-            Join us for the 3rd International Congress of Women Changemakers and Visionary Leaders, hosted by Neo Conferences, on March 05-06, 2025, in Paris, France. This dynamic gathering brings together women from various backgrounds and cultures, fostering meaningful connections, collaboration, and networking opportunities to address critical global issues impacting women's lives.
+            Join us for the 4th International Congress of Women Changemakers and Visionary Leaders, hosted by Neo Conferences, on May 07-08, 2025, in Toronto, Canada. This dynamic gathering brings together women from various backgrounds and cultures, fostering meaningful connections, collaboration, and networking opportunities to address critical global issues impacting women's lives.
             <strong> "Empowering Women for a Sustainable Future: Innovation, Leadership, and Change."</strong>.
           </p>
           <p>
@@ -217,10 +218,10 @@ const Events = () => {
       </div>
 
 
-      <div className="news-sessions">
+      <div className="chnews-sessions">
         <h1>Sessions/Topics</h1>
-        <div className="news-card-container">
-          <div className="news-card">
+        <div className="chnews-card-container">
+          <div className="chnews-card">
             <h2> Women's Representation in Leadership</h2>
             <ul>
               <li>Barriers to Women's Leadership and Strategies to Overcome Them</li>
@@ -233,7 +234,7 @@ const Events = () => {
               <li>Women's Leadership in Politics and Public Service</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women in Innovation and Entrepreneurship</h2>
             <ul>
               <li>Women’s Entrepreneurship Ecosystems and Support Networks</li>
@@ -244,7 +245,7 @@ const Events = () => {
               <li>Women’s Leadership in Tech Startups and Emerging Industries</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women Empowerment & Leadership</h2>
             <ul>
               <li>Women’s Empowerment Through Education and Training</li>
@@ -255,7 +256,7 @@ const Events = () => {
               <li>Women’s Empowerment in Rural and Marginalized Communities</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women in Safety & Health</h2>
             <ul>
               <li>Occupational Health and Safety for Women Workers</li>
@@ -266,7 +267,7 @@ const Events = () => {
               <li>The Impact of Gender-Based Violence on Women’s Mental Health</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women in Power and Decision-Making</h2>
             <ul>
               <li>The Gender Gap in Political Representation and Strategies for Closing It</li>
@@ -277,7 +278,7 @@ const Events = () => {
               <li>Women’s Political and Social Activism</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women in Business Management & Startups</h2>
             <ul>
               <li>Women’s Leadership in Corporate and Business Management</li>
@@ -288,7 +289,7 @@ const Events = () => {
               <li>Women’s Leadership in Franchising and Multi-Unit Ownership</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women Economic Empowerment</h2>
             <ul>
               <li>Women’s Participation in the Informal Economy and Strategies for Formalization</li>
@@ -300,7 +301,7 @@ const Events = () => {
               
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Gender Equality and Empowerment</h2>
             <ul>
               <li>The Impact of Gender Inequality on Economic Development and Growth</li>
@@ -311,7 +312,7 @@ const Events = () => {
               <li>Women’s Participation in Gender-Based Activism and Advocacy</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Women in Network and Sustainable Development</h2>
             <ul>
               <li> Women’s Leadership in Environmental Sustainability and Climate Change Adaptation</li>
@@ -322,7 +323,7 @@ const Events = () => {
               <li>Women’s Leadership in Disaster Risk Reduction and Management</li>
             </ul>
           </div>
-          <div className="news-card">
+          <div className="chnews-card">
             <h2>Work and the Future of Feminism</h2>
             <ul>
               <li>The Impact of New Technologies and the Changing Nature of Work on Gender Equality</li>
@@ -332,15 +333,15 @@ const Events = () => {
             </ul>
           </div>
         </div>
-        <div className="venue-section">
+        <div className="chvenue-section">
           <h2>Venue</h2>
-          <p>Paris, France</p>
+          <p>Toronto, Canada</p>
         </div>
       </div>
 
-      <div className="scientific-agenda">
+      <div className="chscientific-agenda">
         <h2>Scientific Agenda</h2>
-        <div className="day-buttons">
+        <div className="chday-buttons">
           <button onClick={() => setSelectedDay('day1')} className={selectedDay === 'day1' ? 'active' : ''}>
             Day 1 (Physical)
           </button>
@@ -355,7 +356,7 @@ const Events = () => {
           </button>
         </div>
 
-        <table className="schedule-table">
+        <table className="chschedule-table">
           <thead>
             <tr>
               <th>Time</th>

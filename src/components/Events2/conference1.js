@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../chatbot/chatbot";
 import Footer from "../Footer/footer";
 import Register from "../Register/register";
-import newfile from "../images/Neo Mental Health Brochure.pdf"
+// import newfile from "../images/Neo Mental Health Brochure.pdf"
 
 const OverlayPage = () => {
   const navigate=useNavigate()
@@ -15,7 +15,7 @@ const OverlayPage = () => {
     navigate(`/pay/${amount}/${encodeURIComponent(description)}`);
   };
   useEffect(() => {
-    const eventDate = new Date('2025-07-23T00:00:00');
+    const eventDate = new Date('2026-03-08T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -136,85 +136,86 @@ const OverlayPage = () => {
   : null;
 
 
-  const handleBrochureDownload = () => {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href =newfile;
-    link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
+  // const handleBrochureDownload = () => {
+  //   // Create a temporary link element
+  //   const link = document.createElement('a');
+  //   link.href =newfile;
+  //   link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
     
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
 
   return (
     <div>
-      <div className="overlay-container">
-        <div className="overlay-text">
-          <h1> 3rd International Conference on Gender Diversity and Transgender Health </h1> 
-          {/* <p>Women’s Voices, Women’s Power: Toward a Vision of Women Leadership</p> */}
-          <div className="event-details">
-            <div className="event-date">
+      <div className="troverlay-container">
+        <div className="troverlay-text">
+          <h1> 4th International Conference on Gender Diversity and Transgender Health </h1> 
+          <div className="trevent-details">
+            <div className="trevent-date">
               <FaCalendarAlt className="icon" />
-              <span>July 23-24, 2025</span>
+              <span>March 08-09, 2026</span>
             </div>
-            <div className="event-location">
+            <div className="trevent-location">
               <FaMapMarkerAlt className="icon" />
-              <span>London, UK</span>
+              <span>Paris, France</span>
             </div>
           </div>
-          <div className="button-group">
+          <div className="trbutton-group">
           <button 
-            className="event-button" 
-            onClick={handleBrochureDownload}
+            className="trevent-button" 
+            // onClick={handleBrochureDownload}
           >
             Brochure
           </button>
-            <button className="event-button">Abstract</button>
+            <button className="trevent-button">Abstract</button>
           </div>
         </div>
 
-        <div className="countdown-container">
-          <div className="countdown-timer">
-            <div className="time-box">
+        <div className="trcountdown-container">
+          <div className="trcountdown-timer">
+            <div className="trtime-box">
               <span>{timeLeft.days}</span>
               <span>Days</span>
             </div>
-            <div className="time-box">
+            <div className="trtime-box">
               <span>{timeLeft.hours}</span>
               <span>Hours</span>
             </div>
-            <div className="time-box">
+            <div className="trtime-box">
               <span>{timeLeft.minutes}</span>
               <span>Minutes</span>
             </div>
-            <div className="time-box">
+            <div className="trtime-box">
               <span>{timeLeft.seconds}</span>
               <span>Seconds</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="conference-details">
-        <div className="image-container">
+      <div className="trconference-details">
+        <div className="trimage-container">
           <img
             src={require('../images/conf.jpg')}
             alt="Conference"
           />
         </div>
-        <div className="text-container">
+        <div className="trtext-container">
           <h2>About the Conference</h2>
           <p>
             The Global Women’s Leadership Summit, hosted by NEO International conferences, offers an unparalleled opportunity for women of diverse backgrounds and cultures to connect, collaborate, and network on a variety of issues affecting their lives. The theme of the conference:
             <strong> Women’s Voices, Women’s Power: Toward a Vision of Women Leadership</strong>.
           </p>
           <p>
-            Join us for the Global Women’s Leadership Summit to be held on March 05-06, 2025, in Paris, France. This is an opportunity to show your passion on a global stage and connect with like-minded individuals who share your commitment to gender equality, economic empowerment, leadership, education, health, and political participation for women worldwide.
+            Join us for the Global Women’s Leadership Summit to be held on March 08-09, 2026, in Paris, France. This is an opportunity to show your passion on a global stage and connect with like-minded individuals who share your commitment to gender equality, economic empowerment, leadership, education, health, and political participation for women worldwide.
           </p>
         </div>
       </div>
-      <div className="scientific-sessions">
+
+
+      <div className="trscientific-sessions">
         <h1>Sessions/Topics</h1>
         <ul>
           <li>Women's Representation in Leadership</li>
@@ -228,14 +229,16 @@ const OverlayPage = () => {
           <li>Women in Network and Sustainable Development</li>
           <li>Work and the Future of Feminism</li>
         </ul>
-        <div className="venue-section">
+        <div className="trvenue-section">
           <h2>Venue</h2>
           <p>Paris, France</p>
         </div>
       </div>
-      <div className="scientific-agenda">
+
+
+      <div className="trscientific-agenda">
         <h2>Scientific Agenda</h2>
-        <div className="day-buttons">
+        <div className="trday-buttons">
           <button onClick={() => setSelectedDay('day1')} className={selectedDay === 'day1' ? 'active' : ''}>
             Day 1 (Physical)
           </button>
@@ -249,7 +252,7 @@ const OverlayPage = () => {
             Day 2 (Virtual)
           </button>
         </div>
-        <table className="schedule-table">
+        <table className="trschedule-table">
           <thead>
             <tr>
               <th>Time</th>

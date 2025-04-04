@@ -17,7 +17,7 @@ const Events = () => {
 
 
   useEffect(() => {
-    const eventDate = new Date('2025-03-05T00:00:00');
+    const eventDate = new Date('2025-10-09T00:00:00');
     const interval = setInterval(() => {
       const now = new Date();
       const difference = eventDate - now;
@@ -153,15 +153,15 @@ const Events = () => {
     <div>
       <div className="olddetailsover">
         <div className="olddetailsoverlay-text">
-          <h1>3rd Global Women Power Summit on the Dynamics of Leadership </h1> 
+          <h1>4th Global Women Power Summit on the Dynamics of Leadership </h1> 
           <div className="oldevent-details">
             <div className="oldevent-date">
               <FaCalendarAlt className="old-icon" />
-              <span>March 05-06, 2025</span>
+              <span>October 9-10, 2025</span>
             </div>
             <div className="oldevent-location">
               <FaMapMarkerAlt className="old-icon" />
-              <span>Paris, France</span>
+              <span>Toronto, Canada.</span>
             </div>
           </div>
           <div className="oldbutton-group">
@@ -207,8 +207,8 @@ const Events = () => {
             <div className="newconftext-container">
                 <h2>About the Conference</h2>
                 <p>
-                3rd Global Women Power Summit on the Dynamics of Leadership Hosted by NEO Conferences
-                Join us for the 3rd Global Women Power Summit on the Dynamics of Leadership, taking place on March 05-06, 2025, in Paris, France. This summit provides a unique opportunity for leaders, professionals, researchers, and advocates from various backgrounds and cultures to engage, collaborate, and explore vital topics in women’s leadership and empowerment.
+                4th Global Women Power Summit on the Dynamics of Leadership Hosted by NEO Conferences
+                Join us for the 4th Global Women Power Summit on the Dynamics of Leadership, taking place on October 9-10, 2025, in Toronto, Canada. This summit provides a unique opportunity for leaders, professionals, researchers, and advocates from various backgrounds and cultures to engage, collaborate, and explore vital topics in women’s leadership and empowerment.
                   <strong> Theme: "Women's Voices, Women's Power: Toward a Vision of Women Leadership"   </strong>.
                 </p>
                 <p>
@@ -448,7 +448,7 @@ const Events = () => {
               <li>CPD Credits</li>
               <li>Breakfast & Lunch</li>
             </ul>
-            <p>$599</p>
+            <p>$699</p>
             <button onClick={() => handleclick1(599, 'Speaker Registration & Certificate & CPD Credits & Breakfast & Lunch')}>
               Register Now →
             </button>
@@ -463,7 +463,7 @@ const Events = () => {
               <li>Speaker Slot + 2 Nights</li>
               <li>Accommodation</li>
             </ul>
-            <p>$899</p>
+            <p>$999</p>
             <button onClick={() => handleclick1(899, 'Package A: Certificate & CPD Credits & Breakfast & Lunch & Speaker Slot + 2 Nights & Accommodation')}>
               Register Now →
             </button>
@@ -478,7 +478,7 @@ const Events = () => {
               <li>Speaker Slot + 3 Nights</li>
               <li>Accommodation</li>
             </ul>
-            <p>$1,099</p>
+            <p>$1,199</p>
             <button onClick={() => handleclick1(1099, 'Package B: Certificate & CPD Credits & Breakfast & Lunch & Speaker Slot + 3 Nights & Accommodation')}>
               Register Now →
             </button>
@@ -494,7 +494,7 @@ const Events = () => {
               <li>Exhibitor Booth</li>
               <li>Speaker Slot</li>
             </ul>
-            <p>$1,399</p>
+            <p>$1,499</p>
             <button onClick={() => handleclick1(1399, 'Exhibitor Pass: Certificate & CPD Credits & Breakfast & Lunch & Exhibitor Booth & Speaker Slot')}>
               Register Now →
             </button>
@@ -507,7 +507,7 @@ const Events = () => {
               <li>CPD Credits</li>
               <li>Breakfast & Lunch</li>
             </ul>
-            <p>$299</p>
+            <p>$399</p>
             <button onClick={() => handleclick1(299, 'Delegate: Certificate & CPD Credits & Breakfast & Lunch')}>
               Register Now →
             </button>
@@ -519,7 +519,7 @@ const Events = () => {
               <li>Certificate</li>
               <li>CPD Credits</li>
             </ul>
-            <p>$299</p>
+            <p>$399</p>
             <button onClick={() => handleclick1(299, 'Virtual Speaker: Certificate & CPD Credits')}>
               Register Now →
             </button>

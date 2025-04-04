@@ -8,6 +8,7 @@ import img4 from '../images/img4.png';
 import img5 from '../images/img5.jpg';
 import img6 from '../images/img6.jpg';
 import img7 from '../images/newai.PNG';
+import img8 from '../images/leadership.png';
 import ChatbotIcon from '../chatbot/chatbot';
 // import Footer from '../Footer/footer';
 
@@ -40,57 +41,60 @@ const Card = ({ title, date, location, description, image, link }) => {
 const events = [
 
   {
-    title: "3rd International Congress of Women Changemakers and Visionary Leaders",
-    date: "March 05-06, 2025",
-    location: "Prais  France",
+    title: "4th International Congress of Women Changemakers and Visionary Leaders",
+    date: "May 07-08, 2025",
+    location: "Toronto  Canada",
     // description: "Focusing on women influencers in various fields.",
     image: img3,
     link: "/newevents" 
   },
   {
-    title: "3rd International congress on Women's Health and Midwifery Excellence ",
+    title: "4th World Congress on Mindfulness, Psychology, and Spirituality",
     date: "May 07-08, 2025",
     location: "Toronto, Canada",
-    // description: "Visionary Power of Ideas Summit United Leadership (W.U.P.S)",
-    image: img1,
-    link: "/events" 
-  },
-  {
-    title: "3rd Global Congress on Women’s Leadership, Empowerment, and Sustainable Development",
-    date: "July 23-24, 2025",
-    location: "London, UK",
-    // description: "Key discussions on mental health.",
-    image: img2,
-    link: "/events1" 
-  },
-  {
-    title: "3rd World Congress on Mindfulness, Psychology, and Spirituality",
-    date: "March 05-06, 2025",
-    location: "Paris, France",
     // description: "Exploring new trends in health and wellness.",
     image: img4,
     link: "/inside2" 
   },
   {
-    title: "3rd International conference on Mental Health, Well-Being, and Spiritual Healing",
-    date: "May 07-08, 2025",
+    title: "4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development ",
+    date: "October 09-10, 2025",
     location: "Toronto, Canada",
-    // description: "Showcasing the latest in tech innovations.",
+    image: img8,
+    link: "/3rd-event" 
+  },
+  {
+    title: "4th International congress on Women's Health and Midwifery Excellence ",
+    date: "October 09-10, 2025",
+    location: "Toronto, Canada",
+    image: img1,
+    link: "/events" 
+  },
+  {
+    title: "4th International conference on Mental Health, Well-Being, and Spiritual Healing",
+    date: "October 09-10, 2025",
+    location: "Toronto, Canada",
     image: img5,
     link: "/inside1" 
   },
   {
-    title: "3rd International Conference on Gender Diversity and Transgender Health",
-    date: "July 23-24, 2025",
-    location: "London, UK",
-    // description: "Addressing key issues in global education.",
+    title: "4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development",
+    date: "March 08-09, 2026",
+    location: "Paris, France",
+    // description: "Key discussions on mental health.",
+    image: img2,
+    link: "/events1" 
+  },
+  
+  {
+    title: "4th International Conference on Gender Diversity and Transgender Health",
+    date: "March 08-09, 2026",
+    location: "Paris, France",
     image: img6,
     link: "/inside" 
   },
   {
     title: "From Novice to AI Pro: Career-Boosting Skills for the Digital Age",
-    // date: "March 05-06, 2025",
-    // location: "Paris, France",
     image: img7,
     link: "/theosym" 
   },

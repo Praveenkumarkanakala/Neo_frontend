@@ -434,10 +434,9 @@
   .ai_image_overlay {
     position: absolute;
     inset: 0;
-    /* background: rgba(30, 58, 138, 0.2); */
+    
   }
   
-  /* Responsive Design */
   @media (max-width: 1024px) {
     .development-grid {
       grid-template-columns: 1fr;

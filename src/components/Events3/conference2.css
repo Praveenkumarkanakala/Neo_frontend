@@ -3,7 +3,7 @@ body, html {
   padding: 0;
   overflow-x: hidden; 
 }
-.overlay-cont {
+.spoverlay-cont {
   position: relative;
   width: 90%;
   height: 600px;
@@ -15,43 +15,43 @@ body, html {
   align-items: center;
   padding: 0 100px;
   }
-  .overlay-text {
+  .spoverlay-text {
     color: #fff;
     text-align: left;
     padding: 20px;
     border-radius: 10px;
   }
-  .overlay-text h1 {
+  .spoverlay-text h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
-  .overlay-text p {
+  .spoverlay-text p {
     font-size: 1.3rem;
     margin-bottom: 30px;
   }
-  .event-details {
+  .spevent-details {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
   }
-  .event-date,
-  .event-location {
+  .spevent-date,
+  .spevent-location {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .icon {
+  .spicon {
     font-size: 1.5rem;
     color: #fff;
   }
-  .button-group {
+  .spbutton-group {
     display: flex;
     gap: 20px;
     margin-top: 30px;
   }
-  .event-button {
+  .spevent-button {
     text-decoration: none;
     padding: 12px 25px;
     font-size: 1.2rem;
@@ -61,14 +61,15 @@ body, html {
     transition: transform 0.3s ease, background-color 0.3s ease;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
-  .event-button:hover {
+  .spevent-button:hover {
     background-color: #45a049;
     transform: translateY(-5px);
   }
-  .event-button:active {
+  .spevent-button:active {
     transform: translateY(2px);
   }
-  .countdown-container {
+
+  .spcountdown-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,13 +77,13 @@ body, html {
     padding: 2 0px;
     color: white;
   }
-  .countdown-timer {
+  .spcountdown-timer {
     display: flex;
     justify-content: center;
     gap: 20px;
     animation: fadeIn 1s ease;
   }
-  .time-box {
+  .sptime-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,121 +93,94 @@ body, html {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     animation: bounce 1.5s infinite ease-in-out;
   }
-  .time-box span:first-child {
+  .sptime-box span:first-child {
     font-size: 2.8rem;
     font-weight: bold;
     color: #fff;
     animation: fadeNumber 1s infinite alternate;
   }
-  .time-box span:last-child {
+  .sptime-box span:last-child {
     font-size: 1.1rem;
     margin-top: 10px;
   }
 @media (max-width: 1024px) {
-  .overlay-cont {
+  .spoverlay-cont {
     flex-direction: column;
     padding: 0 50px;
     height: auto;
   }
-  .overlay-text {
+  .spoverlay-text {
     text-align: center;
     padding: 20px 0;
   }
-  .countdown-container {
+  .spcountdown-container {
     margin-right: 0;
     margin-top: 20px;
   }
-  .time-box {
+  .sptime-box {
     padding: 30px;
   }
 }
 @media (max-width: 768px) {
-  .overlay-cont {
+  .spoverlay-cont {
     padding: 0 20px;
     justify-content: center;
     align-items: flex-start;
   }
-  .overlay-text h1 {
+  .spoverlay-text h1 {
     font-size: 2rem;
   }
-  .overlay-text p {
+  .spoverlay-text p {
     font-size: 1.1rem;
   }
-  .button-group {
+  .spbutton-group {
     flex-direction: column;
     gap: 15px;
   }
-  .event-button {
+  .spevent-button {
     width: 100%;
     text-align: center;
   }
-  .countdown-container {
+  .spcountdown-container {
     padding: 0;
   }
-  .countdown-timer {
+  .spcountdown-timer {
     flex-direction: column;
     gap: 15px;
   }
-  .time-box {
+  .sptime-box {
     padding: 20px;
   }
-  .time-box span:first-child {
+  .sptime-box span:first-child {
     font-size: 2.3rem;
   }
 }
 @media (max-width: 480px) {
-  .overlay-cont {
+  .spoverlay-cont {
     padding: 0 10px;
   }
-  .overlay-text h1 {
+  .spoverlay-text h1 {
     font-size: 1.8rem;
   }
-  .overlay-text p {
+  .spoverlay-text p {
     font-size: 1rem;
   }
-  .event-details {
+  .spevent-details {
     margin-top: 15px;
   }
-  .event-button {
+  .spevent-button {
     font-size: 1rem;
     padding: 10px 20px;
   }
-  .time-box span:first-child {
+  .sptime-box span:first-child {
     font-size: 2rem;
   }
-  .time-box span:last-child {
+  .sptime-box span:last-child {
     font-size: 1rem;
   }
 }
-  .image-container img {
-    width: 100%;
-    max-width: 938px;
-    height: 450px;
-    padding: 40px;
-    margin-right: 300px;
-    border-radius: 10px;
-  }
-  .text-container {
-    margin-top: 20px;
-    max-width: 938px;
-    margin-right: 100px;
-    text-align: center;
-  }
-  .text-container h2 {
-    color: #0066cc;
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  .text-container p {
-    font-size: 25px;
-    line-height: 1.6;
-    color: #333;
-  }
-  .text-container strong {
-    font-weight: bold;
-    color: #333;
-  }
-  .conference-details {
+
+  .spconference-details {
     background-color: none;
     padding: 50px;
     margin-top: -20px;
@@ -215,51 +189,101 @@ body, html {
     align-items: center;
     color: #333;
   }
-  .image-container {
+  .spimage-container {
     margin-top: 10px;
   }
-  .image-container img {
+  .spimage-container img {
     width: 100%;
     max-width: 1038px;
     height: 500px;
     border-radius: 10px;
   }
-  .text-container {
-    margin-top: 20px;
-    max-width: 938px;
+
+  .sptext-container {
+    margin-top: 30px;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 30px; 
     text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    border-radius: 10px; 
   }
-  .text-container h2 {
-    color: #0066cc;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  .text-container p {
-    font-size: 22px;
-    line-height: 1.6;
-    color: #333;
-  }
-  .text-container strong {
-    font-weight: bold;
-    color: #333;
-  }
-
-
   
-  .scientific-sessions {
+  .sptext-container h2 {
+    color: #003366; 
+    font-size: 34px; 
+    font-weight: bold;
+    margin-bottom: 24px; 
+    letter-spacing: 1px; 
+  }
+  .sptext-container p {
+    font-size: 20px;
+    line-height: 1.8; 
+    color: #333; 
+    margin-bottom: 18px;
+    text-align: justify; 
+  }
+  .sptext-container strong {
+    font-weight: 700; 
+    color: #222; 
+  }
+  .sptext-container br {
+    line-height: 1.8; 
+  }
+  @media (max-width: 1200px) {
+    .sptext-container {
+      padding: 25px; 
+    }
+    .sptext-container h2 {
+      font-size: 30px; 
+    }
+    .sptext-container p {
+      font-size: 18px; 
+    }
+  }
+  @media (max-width: 992px) {
+    .sptext-container {
+      padding: 20px; 
+    }
+  
+    .sptext-container h2 {
+      font-size: 28px;
+    }
+  
+    .sptext-container p {
+      font-size: 17px; 
+    }
+  }
+  @media (max-width: 768px) {
+    .sptext-container {
+      padding: 15px; 
+    }
+  
+    .sptext-container h2 {
+      font-size: 26px; 
+    }
+  
+    .sptext-container p {
+      font-size: 16px; 
+      line-height: 1.6; 
+    }
+  }
+  
+
+  .spscientific-sessions {
     padding: 50px 100px;
     background-color: #f4f4f4;
     text-align: center;
     margin-top: 1px;
   }
   
-  .scientific-sessions h1 {
+  .spscientific-sessions h1 {
     font-size: 3rem;
     color: #2d5e7e;
     margin-bottom: 20px;
     position: relative;
   }
-  .scientific-sessions h1::after {
+  .spscientific-sessions h1::after {
     content: "";
     width: 60px;
     height: 2px;
@@ -269,13 +293,13 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
   }
-  .scientific-sessions ul {
+  .spscientific-sessions ul {
     list-style: none;
     padding: 0;
     max-width: 900px;
     margin: 0 auto;
   }
-  .scientific-sessions ul li {
+  .spscientific-sessions ul li {
     font-size: 18px;
     color: #333;
     line-height: 1.6;
@@ -286,23 +310,26 @@ body, html {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
-  .scientific-sessions ul li:hover {
+  .spscientific-sessions ul li:hover {
     transform: scale(1.02);
     background-color: #eef4fa;
   }
-  .venue-section {
+
+
+
+  .spvenue-section {
     padding: 40px;
     text-align: center;
     margin-top: 1px;
   }
-  .venue-section h2 {
+  .spvenue-section h2 {
     font-size: 52px;
     color: #2d5e7e;
     margin-bottom: 10px;
     margin-top: 20px;
     position: relative;
   }
-  .venue-section h2::after {
+  .spvenue-section h2::after {
     content: "";
     width: 60px;
     height: 3px;
@@ -312,75 +339,29 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
   }
-  .venue-section p {
+  .spvenue-section p {
     font-size: 24px;
     color: #333;
   }
-  .agenda-section {
-    padding: 60px 100px;
-    text-align: center;
-    background-color: #f0f5fa;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  .agenda-section h2 {
-    font-size: 3rem;
-    color: #2d5e7e;
-    margin-bottom: 10px;
-    font-weight: 700;
-    position: relative;
-  }
-  .agenda-section h2::after {
-    content: "";
-    width: 80px;
-    height: 4px;
-    background: #2d5e7e;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-  }
-  .day-buttons {
-    margin-bottom: 40px;
-  }
-  .day-buttons button {
-    margin: 0 15px;
-    padding: 15px 30px;
-    font-size: 1.3rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  .day-buttons button:hover {
-    background-color: #45a049;
-    transform: translateY(-3px);
-  }
-  
-  .day-buttons .active {
-    background-color: #2d5e7e;
-    color: #fff;
-  }
-  .scientific-agenda {
+
+
+  .spscientific-agenda {
     margin-top: 1px;
     text-align: center;
     padding: 40px;
     background-color: #f4f4f4;
     color: #f1f1f1;
   }
-  .scientific-agenda h2 {
+  .spscientific-agenda h2 {
     font-size: 36px;
     margin-bottom: 30px;
     text-transform: uppercase;
     color: #61dafb;
   }
-  .day-buttons {
+  .spday-buttons {
     margin-bottom: 30px;
   }
-  .day-buttons button {
+  .spday-buttons button {
     background-color: #61dafb;
     border: none;
     color: #fff;
@@ -391,15 +372,15 @@ body, html {
     margin: 5px;
     transition: background-color 0.3s, transform 0.3s;
   }
-  .day-buttons button:hover {
+  .spday-buttons button:hover {
     background-color: #21a1f1;
     transform: scale(1.05);
   } 
-  .day-buttons .active {
+  .spday-buttons .active {
     background-color: #333;
     color: #61dafb;
   }
-  .schedule-table {
+  .spschedule-table {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
@@ -407,47 +388,47 @@ body, html {
     border-radius: 8px;
     overflow: hidden;
   }
-  .schedule-table th,
-  .schedule-table td {
+  .spschedule-table th,
+  .spschedule-table td {
     padding: 15px;
     text-align: left;
     font-size: 18px;
   }
-  .schedule-table th {
+  .spschedule-table th {
     background-color: #61dafb;
     color: white;
     font-size: 20px;
   }
-  .schedule-table td {
+  .spschedule-table td {
     color: #333;
   }
-  .schedule-table tr:nth-child(even) {
+  .spschedule-table tr:nth-child(even) {
     background-color: #f7f7f7;
   }
-  .schedule-table tr:hover {
+  .spschedule-table tr:hover {
     background-color: #e0e0e0;
     cursor: pointer;
   }
-  .schedule-table tr:first-child {
+  .spschedule-table tr:first-child {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
   @media (max-width: 768px) {
-    .scientific-agenda {
+    .spscientific-agenda {
       padding: 20px;
     }
   
-    .schedule-table {
+    .spschedule-table {
       width: 100%;
     }
   
-    .day-buttons button {
+    .spday-buttons button {
       font-size: 14px;
       padding: 10px 18px;
     }
   
-    .schedule-table th,
-    .schedule-table td {
+    .spschedule-table th,
+    .spschedule-table td {
       font-size: 16px;
       padding: 10px;
     }
